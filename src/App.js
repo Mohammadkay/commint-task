@@ -1,7 +1,6 @@
 import "./App.css";
 import Reply from "./Components/Replay";
-import Comment from "./Components/Comments.JS";
-import Form from "./Components/New";
+import Comment from "./Components/Comments";
 
 function App() {
   return (
@@ -38,7 +37,6 @@ function App() {
         </div>
       </div>
     </div>
- 
   );
 }
 

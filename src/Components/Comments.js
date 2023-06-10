@@ -39,9 +39,8 @@ function Comment(props) {
                       id={props.inputId}
                       type="text"
                       onChange={(e) => {
-                   
+                        if (e.target.value.trim() !== "")
                           newName = e.target.value;
-                       
                       }}
                     />
                   </div>
@@ -51,9 +50,8 @@ function Comment(props) {
                       id={props.commentid}
                       type="text"
                       onChange={(e) => {
-                     
+                        if (e.target.value.trim() !== "")
                           NewComment = e.target.value;
-                        
                       }}
                     />
                   </div>
@@ -77,5 +75,4 @@ function Comment(props) {
     </>
   );
 }
-
 export default Comment;
